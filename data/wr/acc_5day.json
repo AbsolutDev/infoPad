@@ -1,0 +1,1170 @@
+{
+  "Headline": {
+    "Category": "mild",
+    "EndEpochDate": null,
+    "EffectiveEpochDate": 1599980400,
+    "Severity": 4,
+    "Text": "Pleasant Sunday",
+    "EndDate": null,
+    "Link": "http://www.accuweather.com/en/gb/staines-upon-thames/tw18-4/daily-weather-forecast/331059?unit=c&lang=en-us",
+    "EffectiveDate": "2020-09-13T08:00:00+01:00",
+    "MobileLink": "http://m.accuweather.com/en/gb/staines-upon-thames/tw18-4/extended-weather-forecast/331059?unit=c&lang=en-us"
+  },
+  "DailyForecasts": [
+    {
+      "Temperature": {
+        "Minimum": {
+          "UnitType": 17,
+          "Value": 12,
+          "Unit": "C"
+        },
+        "Maximum": {
+          "UnitType": 17,
+          "Value": 24,
+          "Unit": "C"
+        }
+      },
+      "Night": {
+        "RainProbability": 0,
+        "Wind": {
+          "Speed": {
+            "UnitType": 7,
+            "Value": 7.4,
+            "Unit": "km/h"
+          },
+          "Direction": {
+            "English": "SE",
+            "Degrees": 140,
+            "Localized": "SE"
+          }
+        },
+        "SnowProbability": 0,
+        "Snow": {
+          "UnitType": 4,
+          "Value": 0,
+          "Unit": "cm"
+        },
+        "TotalLiquid": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "ShortPhrase": "Clear",
+        "Ice": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "HoursOfRain": 0,
+        "HoursOfIce": 0,
+        "Rain": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "PrecipitationProbability": 0,
+        "HasPrecipitation": false,
+        "ThunderstormProbability": 0,
+        "IceProbability": 0,
+        "IconPhrase": "Clear",
+        "CloudCover": 0,
+        "LongPhrase": "Clear",
+        "Icon": 33,
+        "WindGust": {
+          "Speed": {
+            "UnitType": 7,
+            "Value": 13,
+            "Unit": "km/h"
+          },
+          "Direction": {
+            "English": "S",
+            "Degrees": 188,
+            "Localized": "S"
+          }
+        },
+        "HoursOfSnow": 0,
+        "HoursOfPrecipitation": 0
+      },
+      "EpochDate": 1599976800,
+      "Moon": {
+        "EpochSet": 1600015860,
+        "Set": "2020-09-13T17:51:00+01:00",
+        "Phase": "WaningCrescent",
+        "EpochRise": 1599954660,
+        "Age": 25,
+        "Rise": "2020-09-13T00:51:00+01:00"
+      },
+      "DegreeDaySummary": {
+        "Cooling": {
+          "UnitType": 17,
+          "Value": 0,
+          "Unit": "C"
+        },
+        "Heating": {
+          "UnitType": 17,
+          "Value": 0,
+          "Unit": "C"
+        }
+      },
+      "RealFeelTemperatureShade": {
+        "Minimum": {
+          "UnitType": 17,
+          "Value": 12.4,
+          "Unit": "C"
+        },
+        "Maximum": {
+          "UnitType": 17,
+          "Value": 22.5,
+          "Unit": "C"
+        }
+      },
+      "AirAndPollen": [
+        {
+          "Type": "Ozone",
+          "Category": "Good",
+          "Value": 29,
+          "CategoryValue": 1,
+          "Name": "AirQuality"
+        },
+        {
+          "Category": "Low",
+          "Value": 0,
+          "CategoryValue": 1,
+          "Name": "Grass"
+        },
+        {
+          "Category": "Low",
+          "Value": 0,
+          "CategoryValue": 1,
+          "Name": "Mold"
+        },
+        {
+          "Category": "Low",
+          "Value": 0,
+          "CategoryValue": 1,
+          "Name": "Ragweed"
+        },
+        {
+          "Category": "Low",
+          "Value": 0,
+          "CategoryValue": 1,
+          "Name": "Tree"
+        },
+        {
+          "Category": "Moderate",
+          "Value": 4,
+          "CategoryValue": 2,
+          "Name": "UVIndex"
+        }
+      ],
+      "HoursOfSun": 11.5,
+      "Sun": {
+        "EpochSet": 1600021200,
+        "Set": "2020-09-13T19:20:00+01:00",
+        "EpochRise": 1599975300,
+        "Rise": "2020-09-13T06:35:00+01:00"
+      },
+      "Sources": ["AccuWeather"],
+      "Date": "2020-09-13T07:00:00+01:00",
+      "RealFeelTemperature": {
+        "Minimum": {
+          "UnitType": 17,
+          "Value": 12.4,
+          "Unit": "C"
+        },
+        "Maximum": {
+          "UnitType": 17,
+          "Value": 24.2,
+          "Unit": "C"
+        }
+      },
+      "Day": {
+        "RainProbability": 0,
+        "Wind": {
+          "Speed": {
+            "UnitType": 7,
+            "Value": 14.8,
+            "Unit": "km/h"
+          },
+          "Direction": {
+            "English": "SW",
+            "Degrees": 222,
+            "Localized": "SW"
+          }
+        },
+        "SnowProbability": 0,
+        "Snow": {
+          "UnitType": 4,
+          "Value": 0,
+          "Unit": "cm"
+        },
+        "TotalLiquid": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "ShortPhrase": "Mostly sunny and comfortable",
+        "Ice": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "HoursOfRain": 0,
+        "HoursOfIce": 0,
+        "Rain": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "PrecipitationProbability": 1,
+        "HasPrecipitation": false,
+        "ThunderstormProbability": 0,
+        "IceProbability": 0,
+        "IconPhrase": "Mostly sunny",
+        "CloudCover": 11,
+        "LongPhrase": "Mostly sunny and comfortable",
+        "Icon": 2,
+        "WindGust": {
+          "Speed": {
+            "UnitType": 7,
+            "Value": 18.5,
+            "Unit": "km/h"
+          },
+          "Direction": {
+            "English": "SW",
+            "Degrees": 227,
+            "Localized": "SW"
+          }
+        },
+        "HoursOfSnow": 0,
+        "HoursOfPrecipitation": 0
+      },
+      "Link": "http://www.accuweather.com/en/gb/staines-upon-thames/tw18-4/daily-weather-forecast/331059?day=1&unit=c&lang=en-us",
+      "MobileLink": "http://m.accuweather.com/en/gb/staines-upon-thames/tw18-4/daily-weather-forecast/331059?day=1&unit=c&lang=en-us"
+    },
+    {
+      "Temperature": {
+        "Minimum": {
+          "UnitType": 17,
+          "Value": 16,
+          "Unit": "C"
+        },
+        "Maximum": {
+          "UnitType": 17,
+          "Value": 29,
+          "Unit": "C"
+        }
+      },
+      "Night": {
+        "RainProbability": 1,
+        "Wind": {
+          "Speed": {
+            "UnitType": 7,
+            "Value": 9.3,
+            "Unit": "km/h"
+          },
+          "Direction": {
+            "English": "ENE",
+            "Degrees": 70,
+            "Localized": "ENE"
+          }
+        },
+        "SnowProbability": 0,
+        "Snow": {
+          "UnitType": 4,
+          "Value": 0,
+          "Unit": "cm"
+        },
+        "TotalLiquid": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "ShortPhrase": "Clear and mild",
+        "Ice": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "HoursOfRain": 0,
+        "HoursOfIce": 0,
+        "Rain": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "PrecipitationProbability": 1,
+        "HasPrecipitation": false,
+        "ThunderstormProbability": 0,
+        "IceProbability": 0,
+        "IconPhrase": "Clear",
+        "CloudCover": 0,
+        "LongPhrase": "Clear and mild",
+        "Icon": 33,
+        "WindGust": {
+          "Speed": {
+            "UnitType": 7,
+            "Value": 13,
+            "Unit": "km/h"
+          },
+          "Direction": {
+            "English": "E",
+            "Degrees": 95,
+            "Localized": "E"
+          }
+        },
+        "HoursOfSnow": 0,
+        "HoursOfPrecipitation": 0
+      },
+      "EpochDate": 1600063200,
+      "Moon": {
+        "EpochSet": 1600104480,
+        "Set": "2020-09-14T18:28:00+01:00",
+        "Phase": "WaningCrescent",
+        "EpochRise": 1600045260,
+        "Age": 26,
+        "Rise": "2020-09-14T02:01:00+01:00"
+      },
+      "DegreeDaySummary": {
+        "Cooling": {
+          "UnitType": 17,
+          "Value": 4,
+          "Unit": "C"
+        },
+        "Heating": {
+          "UnitType": 17,
+          "Value": 0,
+          "Unit": "C"
+        }
+      },
+      "RealFeelTemperatureShade": {
+        "Minimum": {
+          "UnitType": 17,
+          "Value": 15.8,
+          "Unit": "C"
+        },
+        "Maximum": {
+          "UnitType": 17,
+          "Value": 27.6,
+          "Unit": "C"
+        }
+      },
+      "AirAndPollen": [
+        {
+          "Type": "Particle Pollution",
+          "Category": "Moderate",
+          "Value": 61,
+          "CategoryValue": 2,
+          "Name": "AirQuality"
+        },
+        {
+          "Category": "Low",
+          "Value": 0,
+          "CategoryValue": 1,
+          "Name": "Grass"
+        },
+        {
+          "Category": "Low",
+          "Value": 0,
+          "CategoryValue": 1,
+          "Name": "Mold"
+        },
+        {
+          "Category": "Low",
+          "Value": 0,
+          "CategoryValue": 1,
+          "Name": "Ragweed"
+        },
+        {
+          "Category": "Low",
+          "Value": 0,
+          "CategoryValue": 1,
+          "Name": "Tree"
+        },
+        {
+          "Category": "Moderate",
+          "Value": 4,
+          "CategoryValue": 2,
+          "Name": "UVIndex"
+        }
+      ],
+      "HoursOfSun": 11.5,
+      "Sun": {
+        "EpochSet": 1600107420,
+        "Set": "2020-09-14T19:17:00+01:00",
+        "EpochRise": 1600061760,
+        "Rise": "2020-09-14T06:36:00+01:00"
+      },
+      "Sources": ["AccuWeather"],
+      "Date": "2020-09-14T07:00:00+01:00",
+      "RealFeelTemperature": {
+        "Minimum": {
+          "UnitType": 17,
+          "Value": 15.8,
+          "Unit": "C"
+        },
+        "Maximum": {
+          "UnitType": 17,
+          "Value": 29.9,
+          "Unit": "C"
+        }
+      },
+      "Day": {
+        "RainProbability": 0,
+        "Wind": {
+          "Speed": {
+            "UnitType": 7,
+            "Value": 9.3,
+            "Unit": "km/h"
+          },
+          "Direction": {
+            "English": "ESE",
+            "Degrees": 108,
+            "Localized": "ESE"
+          }
+        },
+        "SnowProbability": 0,
+        "Snow": {
+          "UnitType": 4,
+          "Value": 0,
+          "Unit": "cm"
+        },
+        "TotalLiquid": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "ShortPhrase": "Mostly sunny and warmer",
+        "Ice": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "HoursOfRain": 0,
+        "HoursOfIce": 0,
+        "Rain": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "PrecipitationProbability": 0,
+        "HasPrecipitation": false,
+        "ThunderstormProbability": 0,
+        "IceProbability": 0,
+        "IconPhrase": "Mostly sunny",
+        "CloudCover": 11,
+        "LongPhrase": "Mostly sunny and warmer",
+        "Icon": 2,
+        "WindGust": {
+          "Speed": {
+            "UnitType": 7,
+            "Value": 14.8,
+            "Unit": "km/h"
+          },
+          "Direction": {
+            "English": "SE",
+            "Degrees": 132,
+            "Localized": "SE"
+          }
+        },
+        "HoursOfSnow": 0,
+        "HoursOfPrecipitation": 0
+      },
+      "Link": "http://www.accuweather.com/en/gb/staines-upon-thames/tw18-4/daily-weather-forecast/331059?day=2&unit=c&lang=en-us",
+      "MobileLink": "http://m.accuweather.com/en/gb/staines-upon-thames/tw18-4/daily-weather-forecast/331059?day=2&unit=c&lang=en-us"
+    },
+    {
+      "Temperature": {
+        "Minimum": {
+          "UnitType": 17,
+          "Value": 16,
+          "Unit": "C"
+        },
+        "Maximum": {
+          "UnitType": 17,
+          "Value": 29,
+          "Unit": "C"
+        }
+      },
+      "Night": {
+        "RainProbability": 19,
+        "Wind": {
+          "Speed": {
+            "UnitType": 7,
+            "Value": 7.4,
+            "Unit": "km/h"
+          },
+          "Direction": {
+            "English": "WNW",
+            "Degrees": 299,
+            "Localized": "WNW"
+          }
+        },
+        "SnowProbability": 0,
+        "Snow": {
+          "UnitType": 4,
+          "Value": 0,
+          "Unit": "cm"
+        },
+        "TotalLiquid": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "ShortPhrase": "Mostly clear and mild",
+        "Ice": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "HoursOfRain": 0,
+        "HoursOfIce": 0,
+        "Rain": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "PrecipitationProbability": 19,
+        "HasPrecipitation": false,
+        "ThunderstormProbability": 3,
+        "IceProbability": 0,
+        "IconPhrase": "Mostly clear",
+        "CloudCover": 21,
+        "LongPhrase": "Clear to partly cloudy and mild",
+        "Icon": 34,
+        "WindGust": {
+          "Speed": {
+            "UnitType": 7,
+            "Value": 16.7,
+            "Unit": "km/h"
+          },
+          "Direction": {
+            "English": "W",
+            "Degrees": 280,
+            "Localized": "W"
+          }
+        },
+        "HoursOfSnow": 0,
+        "HoursOfPrecipitation": 0
+      },
+      "EpochDate": 1600149600,
+      "Moon": {
+        "EpochSet": 1600192620,
+        "Set": "2020-09-15T18:57:00+01:00",
+        "Phase": "WaningCrescent",
+        "EpochRise": 1600136460,
+        "Age": 27,
+        "Rise": "2020-09-15T03:21:00+01:00"
+      },
+      "DegreeDaySummary": {
+        "Cooling": {
+          "UnitType": 17,
+          "Value": 4,
+          "Unit": "C"
+        },
+        "Heating": {
+          "UnitType": 17,
+          "Value": 0,
+          "Unit": "C"
+        }
+      },
+      "RealFeelTemperatureShade": {
+        "Minimum": {
+          "UnitType": 17,
+          "Value": 15.8,
+          "Unit": "C"
+        },
+        "Maximum": {
+          "UnitType": 17,
+          "Value": 28,
+          "Unit": "C"
+        }
+      },
+      "AirAndPollen": [
+        {
+          "Type": "Particle Pollution",
+          "Category": "Moderate",
+          "Value": 66,
+          "CategoryValue": 2,
+          "Name": "AirQuality"
+        },
+        {
+          "Category": "Low",
+          "Value": 0,
+          "CategoryValue": 1,
+          "Name": "Grass"
+        },
+        {
+          "Category": "Low",
+          "Value": 0,
+          "CategoryValue": 1,
+          "Name": "Mold"
+        },
+        {
+          "Category": "Low",
+          "Value": 0,
+          "CategoryValue": 1,
+          "Name": "Ragweed"
+        },
+        {
+          "Category": "Low",
+          "Value": 0,
+          "CategoryValue": 1,
+          "Name": "Tree"
+        },
+        {
+          "Category": "Moderate",
+          "Value": 4,
+          "CategoryValue": 2,
+          "Name": "UVIndex"
+        }
+      ],
+      "HoursOfSun": 7.1,
+      "Sun": {
+        "EpochSet": 1600193700,
+        "Set": "2020-09-15T19:15:00+01:00",
+        "EpochRise": 1600148280,
+        "Rise": "2020-09-15T06:38:00+01:00"
+      },
+      "Sources": ["AccuWeather"],
+      "Date": "2020-09-15T07:00:00+01:00",
+      "RealFeelTemperature": {
+        "Minimum": {
+          "UnitType": 17,
+          "Value": 15.8,
+          "Unit": "C"
+        },
+        "Maximum": {
+          "UnitType": 17,
+          "Value": 30.3,
+          "Unit": "C"
+        }
+      },
+      "Day": {
+        "RainProbability": 3,
+        "Wind": {
+          "Speed": {
+            "UnitType": 7,
+            "Value": 9.3,
+            "Unit": "km/h"
+          },
+          "Direction": {
+            "English": "SSW",
+            "Degrees": 213,
+            "Localized": "SSW"
+          }
+        },
+        "SnowProbability": 0,
+        "Snow": {
+          "UnitType": 4,
+          "Value": 0,
+          "Unit": "cm"
+        },
+        "TotalLiquid": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "ShortPhrase": "Very warm with clouds and sun",
+        "Ice": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "HoursOfRain": 0,
+        "HoursOfIce": 0,
+        "Rain": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "PrecipitationProbability": 3,
+        "HasPrecipitation": false,
+        "ThunderstormProbability": 1,
+        "IceProbability": 0,
+        "IconPhrase": "Intermittent clouds",
+        "CloudCover": 46,
+        "LongPhrase": "Very warm with times of clouds and sun",
+        "Icon": 4,
+        "WindGust": {
+          "Speed": {
+            "UnitType": 7,
+            "Value": 16.7,
+            "Unit": "km/h"
+          },
+          "Direction": {
+            "English": "W",
+            "Degrees": 277,
+            "Localized": "W"
+          }
+        },
+        "HoursOfSnow": 0,
+        "HoursOfPrecipitation": 0
+      },
+      "Link": "http://www.accuweather.com/en/gb/staines-upon-thames/tw18-4/daily-weather-forecast/331059?day=3&unit=c&lang=en-us",
+      "MobileLink": "http://m.accuweather.com/en/gb/staines-upon-thames/tw18-4/daily-weather-forecast/331059?day=3&unit=c&lang=en-us"
+    },
+    {
+      "Temperature": {
+        "Minimum": {
+          "UnitType": 17,
+          "Value": 14,
+          "Unit": "C"
+        },
+        "Maximum": {
+          "UnitType": 17,
+          "Value": 26,
+          "Unit": "C"
+        }
+      },
+      "Night": {
+        "RainProbability": 24,
+        "Wind": {
+          "Speed": {
+            "UnitType": 7,
+            "Value": 18.5,
+            "Unit": "km/h"
+          },
+          "Direction": {
+            "English": "NE",
+            "Degrees": 40,
+            "Localized": "NE"
+          }
+        },
+        "SnowProbability": 0,
+        "Snow": {
+          "UnitType": 4,
+          "Value": 0,
+          "Unit": "cm"
+        },
+        "TotalLiquid": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "ShortPhrase": "Partly cloudy and mild",
+        "Ice": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "HoursOfRain": 0,
+        "HoursOfIce": 0,
+        "Rain": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "PrecipitationProbability": 25,
+        "HasPrecipitation": false,
+        "ThunderstormProbability": 0,
+        "IceProbability": 0,
+        "IconPhrase": "Partly cloudy",
+        "CloudCover": 47,
+        "LongPhrase": "Partly cloudy and mild",
+        "Icon": 35,
+        "WindGust": {
+          "Speed": {
+            "UnitType": 7,
+            "Value": 20.4,
+            "Unit": "km/h"
+          },
+          "Direction": {
+            "English": "NE",
+            "Degrees": 40,
+            "Localized": "NE"
+          }
+        },
+        "HoursOfSnow": 0,
+        "HoursOfPrecipitation": 0
+      },
+      "EpochDate": 1600236000,
+      "Moon": {
+        "EpochSet": 1600280520,
+        "Set": "2020-09-16T19:22:00+01:00",
+        "Phase": "WaningCrescent",
+        "EpochRise": 1600227900,
+        "Age": 29,
+        "Rise": "2020-09-16T04:45:00+01:00"
+      },
+      "DegreeDaySummary": {
+        "Cooling": {
+          "UnitType": 17,
+          "Value": 2,
+          "Unit": "C"
+        },
+        "Heating": {
+          "UnitType": 17,
+          "Value": 0,
+          "Unit": "C"
+        }
+      },
+      "RealFeelTemperatureShade": {
+        "Minimum": {
+          "UnitType": 17,
+          "Value": 11.1,
+          "Unit": "C"
+        },
+        "Maximum": {
+          "UnitType": 17,
+          "Value": 24.7,
+          "Unit": "C"
+        }
+      },
+      "AirAndPollen": [
+        {
+          "Type": "Particle Pollution",
+          "Category": "Moderate",
+          "Value": 66,
+          "CategoryValue": 2,
+          "Name": "AirQuality"
+        },
+        {
+          "Category": "Low",
+          "Value": 0,
+          "CategoryValue": 1,
+          "Name": "Grass"
+        },
+        {
+          "Category": "Low",
+          "Value": 0,
+          "CategoryValue": 1,
+          "Name": "Mold"
+        },
+        {
+          "Category": "Low",
+          "Value": 0,
+          "CategoryValue": 1,
+          "Name": "Ragweed"
+        },
+        {
+          "Category": "Low",
+          "Value": 0,
+          "CategoryValue": 1,
+          "Name": "Tree"
+        },
+        {
+          "Category": "Moderate",
+          "Value": 3,
+          "CategoryValue": 2,
+          "Name": "UVIndex"
+        }
+      ],
+      "HoursOfSun": 5,
+      "Sun": {
+        "EpochSet": 1600279980,
+        "Set": "2020-09-16T19:13:00+01:00",
+        "EpochRise": 1600234740,
+        "Rise": "2020-09-16T06:39:00+01:00"
+      },
+      "Sources": ["AccuWeather"],
+      "Date": "2020-09-16T07:00:00+01:00",
+      "RealFeelTemperature": {
+        "Minimum": {
+          "UnitType": 17,
+          "Value": 11.1,
+          "Unit": "C"
+        },
+        "Maximum": {
+          "UnitType": 17,
+          "Value": 26.1,
+          "Unit": "C"
+        }
+      },
+      "Day": {
+        "RainProbability": 25,
+        "Wind": {
+          "Speed": {
+            "UnitType": 7,
+            "Value": 13,
+            "Unit": "km/h"
+          },
+          "Direction": {
+            "English": "NNE",
+            "Degrees": 16,
+            "Localized": "NNE"
+          }
+        },
+        "SnowProbability": 0,
+        "Snow": {
+          "UnitType": 4,
+          "Value": 0,
+          "Unit": "cm"
+        },
+        "TotalLiquid": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "ShortPhrase": "Partly sunny and very warm",
+        "Ice": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "HoursOfRain": 0,
+        "HoursOfIce": 0,
+        "Rain": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "PrecipitationProbability": 25,
+        "HasPrecipitation": false,
+        "ThunderstormProbability": 0,
+        "IceProbability": 0,
+        "IconPhrase": "Intermittent clouds",
+        "CloudCover": 66,
+        "LongPhrase": "Very warm with times of clouds and sun",
+        "Icon": 4,
+        "WindGust": {
+          "Speed": {
+            "UnitType": 7,
+            "Value": 18.5,
+            "Unit": "km/h"
+          },
+          "Direction": {
+            "English": "NNE",
+            "Degrees": 33,
+            "Localized": "NNE"
+          }
+        },
+        "HoursOfSnow": 0,
+        "HoursOfPrecipitation": 0
+      },
+      "Link": "http://www.accuweather.com/en/gb/staines-upon-thames/tw18-4/daily-weather-forecast/331059?day=4&unit=c&lang=en-us",
+      "MobileLink": "http://m.accuweather.com/en/gb/staines-upon-thames/tw18-4/daily-weather-forecast/331059?day=4&unit=c&lang=en-us"
+    },
+    {
+      "Temperature": {
+        "Minimum": {
+          "UnitType": 17,
+          "Value": 12,
+          "Unit": "C"
+        },
+        "Maximum": {
+          "UnitType": 17,
+          "Value": 21,
+          "Unit": "C"
+        }
+      },
+      "Night": {
+        "RainProbability": 1,
+        "Wind": {
+          "Speed": {
+            "UnitType": 7,
+            "Value": 16.7,
+            "Unit": "km/h"
+          },
+          "Direction": {
+            "English": "NE",
+            "Degrees": 54,
+            "Localized": "NE"
+          }
+        },
+        "SnowProbability": 0,
+        "Snow": {
+          "UnitType": 4,
+          "Value": 0,
+          "Unit": "cm"
+        },
+        "TotalLiquid": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "ShortPhrase": "Mainly clear",
+        "Ice": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "HoursOfRain": 0,
+        "HoursOfIce": 0,
+        "Rain": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "PrecipitationProbability": 1,
+        "HasPrecipitation": false,
+        "ThunderstormProbability": 0,
+        "IceProbability": 0,
+        "IconPhrase": "Mostly clear",
+        "CloudCover": 11,
+        "LongPhrase": "Mainly clear",
+        "Icon": 34,
+        "WindGust": {
+          "Speed": {
+            "UnitType": 7,
+            "Value": 20.4,
+            "Unit": "km/h"
+          },
+          "Direction": {
+            "English": "ENE",
+            "Degrees": 62,
+            "Localized": "ENE"
+          }
+        },
+        "HoursOfSnow": 0,
+        "HoursOfPrecipitation": 0
+      },
+      "EpochDate": 1600322400,
+      "Moon": {
+        "EpochSet": 1600368180,
+        "Set": "2020-09-17T19:43:00+01:00",
+        "Phase": "New",
+        "EpochRise": 1600319520,
+        "Age": 0,
+        "Rise": "2020-09-17T06:12:00+01:00"
+      },
+      "DegreeDaySummary": {
+        "Cooling": {
+          "UnitType": 17,
+          "Value": 0,
+          "Unit": "C"
+        },
+        "Heating": {
+          "UnitType": 17,
+          "Value": 2,
+          "Unit": "C"
+        }
+      },
+      "RealFeelTemperatureShade": {
+        "Minimum": {
+          "UnitType": 17,
+          "Value": 9.7,
+          "Unit": "C"
+        },
+        "Maximum": {
+          "UnitType": 17,
+          "Value": 19.1,
+          "Unit": "C"
+        }
+      },
+      "AirAndPollen": [
+        {
+          "Type": "Ozone",
+          "Category": "Good",
+          "Value": 0,
+          "CategoryValue": 1,
+          "Name": "AirQuality"
+        },
+        {
+          "Category": "Low",
+          "Value": 0,
+          "CategoryValue": 1,
+          "Name": "Grass"
+        },
+        {
+          "Category": "Low",
+          "Value": 0,
+          "CategoryValue": 1,
+          "Name": "Mold"
+        },
+        {
+          "Category": "Low",
+          "Value": 0,
+          "CategoryValue": 1,
+          "Name": "Ragweed"
+        },
+        {
+          "Category": "Low",
+          "Value": 0,
+          "CategoryValue": 1,
+          "Name": "Tree"
+        },
+        {
+          "Category": "Moderate",
+          "Value": 4,
+          "CategoryValue": 2,
+          "Name": "UVIndex"
+        }
+      ],
+      "HoursOfSun": 8.5,
+      "Sun": {
+        "EpochSet": 1600366260,
+        "Set": "2020-09-17T19:11:00+01:00",
+        "EpochRise": 1600321260,
+        "Rise": "2020-09-17T06:41:00+01:00"
+      },
+      "Sources": ["AccuWeather"],
+      "Date": "2020-09-17T07:00:00+01:00",
+      "RealFeelTemperature": {
+        "Minimum": {
+          "UnitType": 17,
+          "Value": 9.7,
+          "Unit": "C"
+        },
+        "Maximum": {
+          "UnitType": 17,
+          "Value": 20.8,
+          "Unit": "C"
+        }
+      },
+      "Day": {
+        "RainProbability": 3,
+        "Wind": {
+          "Speed": {
+            "UnitType": 7,
+            "Value": 20.4,
+            "Unit": "km/h"
+          },
+          "Direction": {
+            "English": "NE",
+            "Degrees": 55,
+            "Localized": "NE"
+          }
+        },
+        "SnowProbability": 0,
+        "Snow": {
+          "UnitType": 4,
+          "Value": 0,
+          "Unit": "cm"
+        },
+        "TotalLiquid": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "ShortPhrase": "Partly sunny and pleasant",
+        "Ice": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "HoursOfRain": 0,
+        "HoursOfIce": 0,
+        "Rain": {
+          "UnitType": 3,
+          "Value": 0,
+          "Unit": "mm"
+        },
+        "PrecipitationProbability": 3,
+        "HasPrecipitation": false,
+        "ThunderstormProbability": 0,
+        "IceProbability": 0,
+        "IconPhrase": "Partly sunny",
+        "CloudCover": 32,
+        "LongPhrase": "Partly sunny and pleasant",
+        "Icon": 3,
+        "WindGust": {
+          "Speed": {
+            "UnitType": 7,
+            "Value": 24.1,
+            "Unit": "km/h"
+          },
+          "Direction": {
+            "English": "NE",
+            "Degrees": 52,
+            "Localized": "NE"
+          }
+        },
+        "HoursOfSnow": 0,
+        "HoursOfPrecipitation": 0
+      },
+      "Link": "http://www.accuweather.com/en/gb/staines-upon-thames/tw18-4/daily-weather-forecast/331059?day=5&unit=c&lang=en-us",
+      "MobileLink": "http://m.accuweather.com/en/gb/staines-upon-thames/tw18-4/daily-weather-forecast/331059?day=5&unit=c&lang=en-us"
+    }
+  ]
+}
