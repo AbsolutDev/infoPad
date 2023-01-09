@@ -1,6 +1,6 @@
 # **infoPAD**
 
-An information and home control application with digital picture frame capability.
+An information and home control dashboard with digital picture frame capability.
 
 
 # Contents
@@ -14,11 +14,11 @@ An information and home control application with digital picture frame capabilit
 
 # General Info
 
-This is so far my favourite project I have worked on throughout 2020 during the COVID lockdowns and is based on an older dream of mine to have a "control centre" for the home. It has *evolved* to become a comprehensive information screen, displaying (besides the current time)the weather, trains schedule, news headlines and incoming calendar events. It also connects to and can control my smart speaker, works like a digital picture frame, monitors devices connected to the network and can launch other apps.
+This is so far my favourite project I have worked on throughout 2020 during the COVID lockdowns and is based on an older dream of mine to have a "control centre" for the home. It has *evolved* to become a comprehensive information screen displaying, besides the current date and time, the weather, trains schedule, news headlines and incoming calendar events. It also connects to and can control my smart speaker, works like a digital picture frame, monitors devices connected to the network and can launch other apps.
 
-It helped me learn a massive lot, especially about APIs as it relies on so many of them (Accuweather, BBC News Feed, National Rail, Google Calendar and the BOSE smart speaker), but also about asynchronous queries, UX, modular design and transitions/animations.
+It helped me learn a massive lot, especially about APIs as it relies on so many of them (Accuweather, BBC News Feed, National Rail, MET Alerts, Google Calendar and the BOSE smart speaker), but also about asynchronous queries, UX, modular design and transitions/animations.
 
-The app runs in full screen on an older Lenovo Thinkpad Helix 2 Windows tablet which I have mounted on the wall in the kitchen. I have to say I am very proud of the end result, the code reflects my coding knowledge at that time and I am sure it can be considerably optimized and it's far from being perfect but the app has been continously running for years now requiring a restart every 2-3 months if it freezes, besides the occasional Windows update requiring a machine restart.
+The app runs in full screen on an older Lenovo Thinkpad Helix 2 Windows tablet which I have mounted on the wall in my kitchen. I have to say I am very proud of the end result, the code reflects my coding knowledge at that time and I am sure it can be considerably optimized and it's far from being perfect but the app has been continously running for years now requiring a restart every 2-3 months if it freezes, besides the occasional Windows update requiring a machine restart.
 
 <figure>
   <img src="./img/wallmount.jpg" alt="infoPad in my kitchen" width="70%" />
@@ -32,12 +32,12 @@ The app is coded entirely in [Processing 3.5.3](https://processing.org/) which i
 Each of the external APIs is accessed using specific methods:
 * Accuweather provides 12 hour and 5 days forecast in JSON format
 * Weather alerts are retrieved from the UK's [MET Office's RSS feed](https://www.metoffice.gov.uk/public/data/PWSCache/WarningsRSS/Region/UK) in XML format.
-* A [SOAP envelope](https://www.w3schools.com/xml/xml_soap.asp) is used to query National Rail Enquiries which returns UK trains timetables in XML format
-* [Gradle](https://gradle.org/) is used to access the Google Calendar API and calendar entries are exported in CSV format
+* A [SOAP envelope](https://www.w3schools.com/xml/xml_soap.asp) is used to query [National Rail Enquiries](https://www.nationalrail.co.uk/) which returns UK train timetables in XML format.
+* [Gradle](https://gradle.org/) is used to access the [Google Calendar API](https://developers.google.com/calendar/api/guides/overview) and calendar entries are exported in CSV format
 * News are queried from the [BBC RSS Feed](http://feeds.bbci.co.uk/news/rss.xml?edition=uk) in XML format
 * The BOSE Soundtouch smart speaker REST API is accessed directly using **http requests**.
 
-The audio player module, menu buttons and icons have been designed/created using [Inkscape](https://inkscape.org/).
+The audio player module, app menu buttons and icons have been designed/created using [Inkscape](https://inkscape.org/).
 <br><br>
 
 # Setup
@@ -54,9 +54,9 @@ Going clockwise from the top left corner:
 * The current time, date and upcoming events retrieved from Google Calendar
 * Menu bottons: About, External Apps Launcher, Connections Monitor and App Configuration
 * BOSE Soundtouch smart speaker controller
-* Trains timetable: next 5 trains on the predefined route e.g. from home station to work
-* Top 5 news headlines from BBC News
-* Current weather, including rain probability, wind speed and humidity %. Clicking it changes to 12 hours forecast, a 2nd click displays 5 days forecast.
+* Trains timetable: next 5 trains on a predefined route e.g. home station to work
+* Top 5 BBC news headlines
+* Current weather, including rain probability, wind speed and humidity %. It changes to 12 hour and 5 day forecast when the module is touched.
 
 The **External Apps Launcher** further extends the functionality by providing access to locally installed apps (Alexa, iTunes, VLC Player, etc.) and online services such as Google Nest and Keeper.
 
@@ -67,33 +67,33 @@ The background image works like a digital picture frame; it can display a static
 
 * ## General Features
 
-The app uses a configuration file which specifies detailed configuration for the services (including the access tokens for those APIs requiring them) and can be used to add/remove elements such as external apps or monitored devices. The file is read only when the app is launched and basic functionality is provided if the file is not accessible.
+The app uses a configuration file containing settings for the services (including the access tokens for those APIs requiring them) and can be used to add/remove elements such as external apps or monitored devices. The file is read only when the app is launched and basic functionality is provided if the file is not accessible.
 
-The app saves events as follows:
-- events for the current session (mostly time of API queries) which are cleared when the app is started
-- events related to the monitored devices, which includes status of the devices when the app is launched and time and date for each time a device changes status.
+Events are saved in log files as follows:
+- events for the current session (mostly time of API queries) which are cleared at app startup
+- events related to the monitored devices, which include status of the devices when the app is launched and time and date for each time a device changes status.
 - a more detailed app log is maintained if enabled in the configuration file. This details the initialization steps when the app starts, along with API queries, devices monitoring, etc.
 
 Log files are saved locally and, if enabled in the configuration file, in a remote location.
 
-The app monitors network and Internet connectivity and services react accordingly when their connection is down. For example, the smartspeaker controls continue to function when the Internet connection is down, as long as the network connectivity is up. Data from the external services is saved locally and will continue to be displayed until eventually it is no longer valid e.g. all known trains have departed.
+The app monitors network and Internet connectivity, modules reacting accordingly when affected. For example, the smartspeaker controls continue to function when the Internet connection is down, as long as the local network connectivity is up. At the same time, sinca data from the external services is saved locally it will continue to be displayed until eventually it is no longer valid e.g. all trains from last successful query have departed.
 
-The modules are configured to take up percentages of the screen, edges and font sizes are also relative to screen size, so the app should display correctly on most monitors in landscape mode. 
+The modules are configured to take up percentages of the screen, edges and font sizes are also relative to screen size, so the app should display correctly on most monitors but only in landscape mode. 
 <br><br>
 
 * ## The Calendar Module
 
-The calendar entries are retrieved from Google Calendar's API using Gradle and saved in a CSV file. This is a scheduled task that runs on a separate computer in my network. infoPad queries the CSV file every 5 minutes, copies its content locally and updates the information displayed accordingly. The module displays the next 10 calendar entries, but for repeating appointments it only displays the upcoming one.
+The calendar entries are retrieved from Google Calendar's API using Gradle and are saved in a CSV file. This is a scheduled task that runs on a separate computer in my network. infoPad queries the CSV file every 5 minutes, copies its content locally and updates the information displayed. The module displays the next 10 calendar entries, but for repeating appointments it only displays the upcoming one.
 
 <figure>
   <img alt="Calendar Module" src="./img/infoPad8.jpg" width="50%" height="50%" />
 </figure>
 <br>
 
-The only interaction on this module is, when touching the calendar area, its background darkens to improve the contrast and make the calendar entries (have used a rather thin font) easier to read.
+The only interaction on this module is, when touching the calendar area, its background darkens to improve the contrast and make the calendar entries (that use a rather thin font) easier to read.
 
 <figure>
-  <img alt="Calendar Module" src="./img/infoPad9.jpg" width="50%" height="50%" />
+  <img alt="Calendar Module with darker background" src="./img/infoPad9.jpg" width="50%" height="50%" />
 </figure>
 <br>
 
@@ -108,7 +108,7 @@ The module displays the current temperature and condition (sunny, rain, etc.) al
 </figure>
 <br>
 
-If there are any, the number of weather alerts reported by the UK MET office is displayed within a red circle next in the bottom right corner of the module. When this is clicked, the MET alerts web page opens in a full screen, kiosk mode Google Chrome.
+If there are any, the number of weather alerts reported by the UK MET office is displayed within a red circle in the bottom right corner of the module. When this is clicked, the MET alerts web page opens in a full screen, kiosk mode Google Chrome.
 
 Clicking on the weather module once causes it to fade into the 12 hour forecast. Clicking again will fade into the 5 day forecast. These return to the normal view upon another click or after a 30 seconds timeout.
 
@@ -123,15 +123,15 @@ Clicking on the weather module once causes it to fade into the 12 hour forecast.
 BBC News RSS feed is queried every 60 seconds, the XML is parsed and first 5 headlines (title and short descriptions) are extracted and displayed each for 10 seconds.
 
 <figure>
-  <img alt="News Module" src="./img/infoPad11.jpg" width="50%" height="50%" />
+  <img alt="News Module" src="./img/infoPad10.jpg" width="50%" height="50%" />
 </figure>
 Transition between the news articles is done with the current article fading out while the next one fades in.
 <br><br>
 
-Clicking on the BBC News Logo will open the news website in a kiosk mode full screen Google Chrome. Clicking the news article will hold it in place allowing more time for reading and clicking the logo will open the news article itself in Chrome.
+Clicking on the BBC News Logo will open the news website in full screen kiosk mode Google Chrome. Clicking the news article will "hold it" in place allowing more time for reading and clicking the logo will open the news article itself in Chrome.
 
 <figure>
-  <img alt="On hold news article" src="./img/infoPad10.jpg" width="50%" height="50%" />
+  <img alt="On hold news article" src="./img/infoPad11.jpg" width="50%" height="50%" />
 </figure>
 <br>
 
@@ -139,12 +139,12 @@ Clicking on the BBC News Logo will open the news website in a kiosk mode full sc
 
 Train information is queried every 60 seconds from the National Rail Service using a [SOAP envelope](https://www.w3schools.com/xml/xml_soap.asp). The request is for retrieving the next 5 trains arriving at the specified station (home station) with a filter for a specified destination.
 
-The information displayed for each train contains the arrival time, status (or initial arrival time for late trains), number of stops and the estimated arrival time to the destination.
+The information displayed for each train contains the arrival time, status (or initial arrival time for late trains), number of stops and the estimated arrival time at the destination.
 <figure>
   <img alt="Trains Timetable module" src="./img/infoPad12.jpg" width="50%" height="50%" />
 </figure>
 
-Colour coding is used to show trains status:
+Colour coding is used to show train status:
 - ON TIME trains are displayed using <font color="green">green</font>
 - CANCELLED and DELAYED (unknown arrival time) trains are displayed using <font color="red">red</font>
 - LATE trains are displayed using <font color="tan">yellow-ish</font>, along with the expected time
@@ -161,9 +161,9 @@ A message is displayed if there are no trains available or train information can
 
 * ## Smart Speaker Control Module
 
-The app connects to my BOSE Soundtouch 20 API to retrieve its status every 3 seconds. The http requests are sent using cURL commands.<br><br>
+The app connects to my BOSE Soundtouch 20 REST API to retrieve its status every 3 seconds. The http requests are sent using cURL commands.<br><br>
 
-When the speaker is in standby, the player sits offscreen leaving only the power button displayed. When the power button is pressed or the speaker becomes active, the module slides in but can be "sent back" using the minimize button underneath the power button.<br>
+When the speaker is in standby, the player sits offscreen with only the power button visible. When the power button is pressed or the speaker becomes active, the module slides in but can also be "sent back" using the minimize button underneath the power button.<br>
 <figure>
   <img alt="Smart Speaker Control Module" src="./img/infoPad14.jpg" width="50%" height="50%" />
 </figure>
@@ -171,8 +171,8 @@ When the speaker is in standby, the player sits offscreen leaving only the power
 
 The power button reflects the status of the speaker:
 <figure>
-  <img alt="Power button speaker on" src="./img/infoPad16.jpg" width="10%" height="10%" />
   <img alt="Power button speaker in stand-by" src="./img/infoPad17.jpg" width="10%" height="10%" />
+  <img alt="Power button speaker on" src="./img/infoPad16.jpg" width="10%" height="10%" />
   <img alt="Power button speaker unreachable" src="./img/infoPad18.jpg" width="10%" height="10%" /><br>
   <b>no colour</b>: speaker is in standby<br>
   <b>steady green</b>: speaker is on<br>
@@ -182,16 +182,16 @@ The power button reflects the status of the speaker:
 </figure>
 <br>
 
-The jog dial button can be used to mute/unmute or pause/unpause, control the volume (push up/down) and skip to next/previous track (push left/right). When the player is muted or paused, the jog's colour changes to red.
+The jog dial can be used to mute/unmute or pause/unpause (press), control the volume (push up/down) and skip to next/previous track (push left/right). When the player is muted or paused, the jog dial's colour changes to red.
 <figure>
   <img alt="Jog dial button" src="./img/infoPad19.jpg" width="10%" height="10%" />
   <img alt="Jog dial button when paused" src="./img/infoPad20.jpg" width="10%" height="10%" />
 </figure>
 <br>
 
-Additionally, the volume can be turned up/down by dragging a finger vertically in the right half of the screen.<br><br>
+Additionally, the volume can be turned up/down by dragging a finger vertically within the right half of the screen.<br><br>
 
-The player's main display shows information about current source like Amazon Music, Local Music, Bluetooth, AirPlay etc. or the name of the radio station. The smaller icons show additional information such as whether the station is in the list of favourites, whether a track, album or playlist is currently playing, shuffle and/or repeat is on, etc.<br><br>
+The player's main display shows information about the current source like Amazon Music, Local Music, Bluetooth, AirPlay etc. or the name of the radio station. The smaller icons show additional information such as whether the station is in the list of favourites, whether a track, album or playlist is currently playing, shuffle and/or repeat is on, etc.<br><br>
 
 The 6 presets can be accessed using the button above the jog dial. Holding a preset pressed for longer than 3 seconds replaces it with the current source:
 <figure>
@@ -205,12 +205,12 @@ A "clean filter" is on by default, meaning that the player will try and skip tra
   <img alt="Clean filter off" src="./img/infoPad23.jpg" width="10%" height="10%" />
   <img alt="Explicit track playing" src="./img/infoPad24.jpg" width="10%" height="10%" /><br>
   C inside a green circle: the filter is on<br>
-  C inside a grey circle: the filter is off but no explicit track is playing at the moment<br>
+  C inside a grey circle: the filter is off with no explicit track is playing at the moment<br>
   E inside a red circle: the filter is off and a track marked as explicit is currently playing
 </figure>
 <br>
 
-Touching the main display reveals the shuffle and repeat controls, if such is available for the current content.
+Touching the main display reveals the shuffle and repeat controls, if they are available for the current content.
 <br><br>
 
 An information panel pops up if details are available for the currently playing content:
@@ -229,17 +229,17 @@ An information panel pops up if details are available for the currently playing 
   <figcaption>Track of an album playing from local music</figcaption>
 </figure><br>
 
-Skipping to next/previous tracks can be done by dragging with the finger horizontally over the pop-up track information panel.<br><br>
+Skipping to next/previous tracks can also be done by dragging with the finger horizontally over the pop-up track information panel.<br><br>
 
 * ## Digital Picture Frame
 
-The app uses a default static image and can be further configured to use images from a local or remote repository. The files can be organized in folders by month and even days and will be displayed accordingly, for example on the 5th of November the app will look for photos in the ./11/05 folder. If no such folder exists, photos in folder ./11 will be used, and if there's still nothing then the photos in the root of the repository will be used. If all these fail, the default image is used.<br><br>
+The app uses a default static image and can be further configured to use images from a local or remote repository. The files can be organized in folders by month and even days and will be displayed accordingly, for example on the 5th of November the app will look for photos in the ./11/05 folder. If there's no such content, it will look into ./11 folder, and if there's still nothing then the photos in the root of the repository will be used. If all these fail, the default image is used.<br><br>
 
 Each time the app is started and every time at midnight, the app loads each of the qualifying images and saves the screens in a local folder. This ensures the files are loaded faster during the day, having the same resolution as the screen and the edges cropped out to match the screen's aspect ratio.
 
 This process can be manually started from the Configuration menu (the REFRESH button), useful if there are changes in the repository.<br><br>
 
-Further background settings are available in the <b>Configuration</b> menu:
+Further settings are available in the <b>Configuration</b> menu:
 - change the slideshow timing
 - turn off the slideshow
 - change to next/previous image
@@ -253,13 +253,13 @@ Further background settings are available in the <b>Configuration</b> menu:
 
 * ## Monitoring Network Devices and Services
 
-The module is accessed via a button in the app's menu:
+The module is accessed via the button from the app's menu:
 <figure>
   <img alt="Devices monitor button" src="./img/infoPad25.jpg" width="30%" height="30%" />
 </figure>
 <br>
 
-Devices and services are added in the **config.ini** file. While the player, server and router have their dedicated sections with specific settings (e.g. ports and protocol), any other devices are added as **[DEVICE]** along with a `display name`, `IP address`, its `kind` and `ignore` settings.
+Devices and services are added in the **config.ini** file. While the player, server and router have their dedicated sections with specific settings (e.g. ports and protocol), any other devices are added as **[DEVICE]** along with a `display name`, the `IP address`, its `kind` and `ignore` settings.
 
 ```
 [PLAYER]
@@ -292,7 +292,7 @@ ignore=false
 ```
 <br>
 
-The `kind` determines which device icon to use, for example setting `kind = speaker` will use the available `speaker.png` icon for the device. If a corresponding icon doesn't exist in the ./ico/devices folder, a default `unknown.png` is used.
+The `kind` determines which device icon to use, for example setting `kind = speaker` will use the available `speaker.png` icon for the device. If a corresponding icon doesn't exist in the ./ico/devices/ folder, a default `unknown.png` is used.
 <br><br>
 
 The app checks the devices at startup and every 60 seconds afterwards by sending `ping` commands. Connection status is reflected by the background colour of the monitored devices icons:
@@ -300,8 +300,7 @@ The app checks the devices at startup and every 60 seconds afterwards by sending
   <img alt="Devices colour reflects status" src="./img/infoPad3.jpg" width="80%" height="80%" />
 </figure>
 The icon's background colour indicates the status of the device:
-<font color="green">green</font> means the device is online
-<font color="red">red</font> means the device is offline and has a <code>ignore=false</code> setting
+<font color="green">green</font> means the device is online, <font color="red">red</font> means the device is offline and has a <code>ignore=false</code> setting, 
 <font color="amber">amber</font> means the device is offline, but has a <code>ignore=true</code> setting.
 <br><br>
 
@@ -357,7 +356,7 @@ The `run` setting should be the exact command used to open the corresponding app
 
 * ## Other Features
 
-By default, the app is set to <font color="green">AUTO DIM: AT NIGHT</font>, which dims the screen automatically at 11:00pm. From the <b>Configuration</b> menu, this can be changed to <font color="green">AUTO DIM: ON</font> which dims the screen after 10 minutes of inactivity, or to <font color="red">AUTO DIM: OFF</font> which disables the feature. Dimming is done at OS level, by launching a powershell command which sets the display brightness to 10%. Touching the screen will launch the command that sets the screen's brightness to 100%.
+By default, the app is set to <font color="green">AUTO DIM: AT NIGHT</font>, which dims the screen automatically at 11:00pm. From the <b>Configuration</b> menu, this can be changed to <font color="green">AUTO DIM: ON</font> which dims the screen after 10 minutes of inactivity, or to <font color="red">AUTO DIM: OFF</font> which disables the feature. Dimming is done at OS level, using a powershell command which sets the display brightness to 10%. Touching the screen will launch the command that sets the screen's brightness to 100%.
 <figure>
   <img alt="Setting auto-dim screen" src="./img/infoPad4.jpg" width="70%" height="70%" />
 </figure>
@@ -370,11 +369,11 @@ Some information is displayed for a few seconds as overlay text in the upper rig
 <br><br>
 
 
-The <b>Info</b> button displays the app version, copyright information and time when trains and news information was last updated.
+The <b>Info</b> button displays the app version, copyright information and time when trains and news information was last successfully queried.
 <figure>
   <img alt="The Info or About screen" src="./img/infoPad29.jpg" width="70%" height="70%" />
 </figure>
 
 ## Known Issues
 - the Player module sometimes fails to display information about what's currently playing, or uses the artwork from the previous source. This doesn't happen very often and it's more probably caused by a lag when retrieving the information from the smart speaker combined with Processing's way of dealing with async operations.
-- the Calendar module is not working at the moment, due to a problem with the script outside the app that fails to return any results from Google. It's something I plan looking into very soon.
+- the Calendar module is not working at the moment due to a problem with the script outside the app that fails to return any results from Google Calendar's API. It's something I plan looking into very soon.
